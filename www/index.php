@@ -4,9 +4,6 @@ ob_start('ob_gzhandler');
 require_once('../sources/globals.php');
 require_once('../sources/includes.php');
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 com_header();
 // print_messages();

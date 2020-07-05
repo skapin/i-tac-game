@@ -1,2 +1,5 @@
 .svn/
 www/images/radars/
+localhost.sql
+localhost.sql.gz
+docker-entrypoint-initdb.d/

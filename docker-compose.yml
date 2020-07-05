@@ -1,0 +1,29 @@
+version: '3.0'
+services:
+  web:
+    image: webdevops/php-apache:7.1
+    ports:
+    - "80:80"
+    - "443:443"
+    environment:
+      WEB_DOCUMENT_ROOT: /app/www
+    volumes:
+    - /home/skapin/Dev/itac_saved/svnbck/:/app
+    - ./php.ini:/opt/docker/etc/php/php.ini
+    links:
+      - mysql:mysql
+  mysql:
+    restart: always
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 'poogpof4fqz51vqse44gvse24gxbv'
+      MYSQL_USER: 'itac02-sql'
+      MYSQL_PASS: '5d6DdvbZSS5600179qcb'
+    ports:
+     - "5432:5432"
+     - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+volumes:
+  mysqldata:

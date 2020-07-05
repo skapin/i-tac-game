@@ -1,0 +1,7 @@
+AuthUserFile /home/www/empire/www/eirb/sources/.htpasswd
+AuthGroupFile /dev/null
+AuthName ByPassword
+AuthType Basic
+<limit GET>
+require valid-user
+</Limit>

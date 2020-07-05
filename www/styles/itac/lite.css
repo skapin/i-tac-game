@@ -1,0 +1,166 @@
+/******************************************************************************
+Importation des proprietes globales
+******************************************************************************/
+
+@import url("global.css");
+@import url("caracs.css");
+
+html,body{
+   padding:0;
+   margin:0;
+   background:#232323 url("../../images/interface/comv2/bgMain.gif");
+}
+
+#lite{
+   padding:0 0 20px 10px;
+   position:relative;
+}
+
+
+a:hover{
+   color:#8ae36b;
+}
+
+h1, h2, h3{
+   color:#8ae36b;
+   padding-left:10px;
+   text-align:left;
+   margin: 10px 0;
+}
+
+h3{
+   padding-left:20px;
+}
+
+h1,h2{
+   clear:both;
+}
+input:focus,textarea:focus,select:focus{
+   border-color:#8ae36b;
+}
+.onglets
+{
+    font: bold 11px verdana, arial, sans-serif;
+    list-style-type: none;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #006738;
+    margin-top: 30px;
+}
+
+.onglets li
+{
+    float: left;
+    height: 21px;
+    background-color: #90B070;
+    margin: 2px 2px 0 2px;
+    border: 1px solid #006738;
+    cursor:pointer;
+    color:#000000;
+}
+
+.onglets li.active
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+.onglets li.active a {
+    color: #000;
+}
+
+.onglets a {
+    float: left;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.onglets a:hover {
+    background: #fff;
+}
+
+img
+{
+padding:0;
+margin:0; 
+}
+
+td.lien
+{
+  cursor:pointer;
+}
+
+
+#map
+{
+position:relative;
+}
+
+#liste_qg, #liste_qg th,#liste_qg td,#liste_qg tr
+{
+  border:solid 1px #646464;
+  border-collapse:collapse;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+#liste_qg th{
+   color:#8ae36b;
+}
+
+#inv1{
+   width:50%;
+   float:left;
+}
+
+#inv2{
+   width:50%;
+   float:left;
+}
+
+#gadInv1,#gadInv2,#gadInv3{
+   float:left;
+   width:33%;
+}
+
+#gadInv1{
+   clear:left;
+}
+dd{
+   margin-left:5px;
+}
+
+#menuHaut li a.active{
+   color:#8ae36b;
+}
+
+table{
+   border-collapse:collapse;
+}
+
+table, td, tr, th{
+   border:solid 1px #ccc;
+   text-align:center;
+}
+
+th{
+   color:#8ae36b;
+}
+
+h2.clearer{
+   clear:both;
+   margin:10px;
+   text-align:center;
+   padding-top:10px;
+   border-top:solid 1px #8e8e8e;
+}
+
+.account{
+  color:#3aa31b;
+}
+
+.target{
+  color:#8ae36b;
+}

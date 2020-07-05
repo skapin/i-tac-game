@@ -1,0 +1,477 @@
+/* Normal, standard links. */
+a:link
+{
+	color: #F1F1F1;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #F1F1F1;
+	text-decoration: none;
+}
+a:hover
+{
+	color: cornflowerblue;
+	text-decoration: underline;
+}
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #FFF;
+	font-size: 100%;
+	text-decoration: none;
+	 font-weight: bold;
+	 font-style: italic;
+}
+a.nav:hover
+{
+	color: cornflowerblue;
+	text-decoration: underline;
+}
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+/* By default (td, body..) use verdana in black. */
+body, td, th , tr
+{
+	color: #FFFFFF;
+	font-size: small;
+	font-family: Georgia, serif;
+}
+/* The main body of the entire forum - To have a (color background only) remove the [bg.gif line]. */
+body
+{ 
+    background: url(images/bg.gif);
+	background-color: #2c2a2a;
+	margin: 0px;
+	padding: 12px 40px 4px 40px;
+}
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	 color: #FFF;
+	background: #3d3d3d;
+	border: 1px solid #000000;
+	font-family: Georgia, serif;
+}
+input, button
+{
+	font-size: 90%;
+	color: #FFF;
+	font-family: Georgia, serif;
+}
+textarea
+{
+	font-size: 100%;
+	color: #FFF;
+	font-family: Georgia, serif;
+}
+/* All input elements that are checkboxes or radio buttons. */
+input.check
+{
+}
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	 color: #FFF;
+	background: #3d3d3d;
+	border: 1px solid #000000;
+	font-family: Georgia, serif;
+	font-size: 90%;
+	font-weight: normal;
+	font-family: Georgia, serif;
+}
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 1px;
+	color: #666666;
+	background-color: #666666;
+}
+/* No image border */
+a img{
+border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background-color: #707070;
+	border: 2px solid #000000;
+	 border-left: 8px solid #000000; 
+	margin: 1px;
+	padding: 1px;
+	font-size: x-small;
+	line-height: 1.4em;
+}
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	font-size: x-small;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: x-small;
+	line-height: 1.2em;
+}
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: white;
+}
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg
+{
+	color: #F1F1F1;
+	background-color: #404040;
+}
+.windowbg2
+{
+	color: #F1F1F1;
+	background-color: #2c2a2a;
+}
+.windowbg3
+{
+	color: #F1F1F1;
+	background-color: #2c2a2a;
+}
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #2c2a2a;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	color: white;
+	font-style: normal;
+	background: url(images/titlebg.gif) repeat-x;
+	border-bottom: solid 1px #000;
+	border-top: solid 1px #000;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.titlebg, .titlebg a:link, .titlebg a:visited
+{
+	font-weight: bold;
+	color: #FFF;
+	font-style: normal;
+}
+
+.titlebg a:hover
+{
+	color: cornflowerblue;
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+	color: white;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.titlebg2 a:hover
+{
+	text-decoration: underline;
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	background: url(images/catbg.gif) repeat-x;
+	color: #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.catbg2 , tr.catbg2 td
+{
+	background: url(images/catbg2.gif) repeat-x;
+	color: #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.catbg, .catbg2, .catbg3
+{
+	border-bottom: solid 1px #000;
+}
+.catbg, .catbg2
+{
+	font-weight: bold;
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+	font-size: 95%;
+	color: white;
+	text-decoration: none;
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+	color: cornflowerblue;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+	background-color: #000;
+	padding: 0px;
+}
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+	padding: 1px;
+	border: 1px solid #000;
+	background-color: #000;
+}
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: x-small;
+	font-family: Georgia, serif;
+}
+.middletext
+{
+	font-size: 90%;
+}
+.normaltext
+{
+	font-size: small;
+}
+.largetext
+{
+	font-size: large;
+}
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+	overflow: auto;
+	line-height: 1.3em;
+}
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+/* Sometimes there will be an error when you post */
+.error{
+	color: red;
+}
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.maintab_first, .maintab_back, .maintab_last, .maintab_active_first, .maintab_active_back, .maintab_active_last
+{
+	color: white;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.maintab_back, .maintab_active_back
+{
+	color: white;
+	text-decoration: none;
+	font-size:  9px;
+	vertical-align: top;
+	padding: 2px 6px 6px 6px;
+	font-family: tahoma, sans-serif;
+}
+.maintab_first
+{
+	background: url(images/maintab_first.gif) left bottom no-repeat;
+	width: 10px;
+}
+.maintab_back
+{
+	background: url(images/maintab_back.gif) left bottom repeat-x;
+}
+.maintab_last
+{
+	background: url(images/maintab_last.gif) left bottom no-repeat;
+	width: 8px;
+}
+.maintab_active_first
+{
+	background: url(images/maintab_active_first.gif) left bottom no-repeat;
+	width: 6px;
+}
+.maintab_active_back
+{
+	background: url(images/maintab_active_back.gif) left bottom repeat-x;
+}
+.maintab_active_last
+{
+	background: url(images/maintab_active_last.gif) left bottom no-repeat;
+	width: 8px;
+}
+/* how links behave in main tab. */
+.maintab_back a:link , .maintab_back a:visited, .maintab_active_back a:link , .maintab_active_back a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+.maintab_back a:hover, .maintab_active_back a:hover
+{
+	color: cornflowerblue;
+	text-decoration: none;
+}
+/* definitions for the mirror tab */
+.mirrortab_first, .mirrortab_back, .mirrortab_last, .mirrortab_active_first, .mirrortab_active_back, .mirrortab_active_last
+{
+	color: white;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.mirrortab_back, .mirrortab_active_back
+{
+	color: white;
+	text-decoration: none;
+	font-size: 9px;
+	vertical-align: bottom;
+	padding: 6px 6px 2px 6px;
+	font-family: tahoma, sans-serif;
+}
+.mirrortab_first
+{
+	background: url(images/mirrortab_first.gif) no-repeat;
+	width: 10px;
+}
+.mirrortab_back
+{
+	background: url(images/mirrortab_back.gif) repeat-x;
+}
+.mirrortab_last
+{
+	background: url(images/mirrortab_last.gif) no-repeat;
+	width: 6px;
+}
+.mirrortab_active_first
+{
+	background: url(images/mirrortab_active_first.gif) no-repeat;
+	width: 6px;
+}
+.mirrortab_active_back
+{
+	background: url(images/mirrortab_active_back.gif) repeat-x;
+}
+.mirrortab_active_last
+{
+	background: url(images/mirrortab_active_last.gif) no-repeat;
+	width: 8px;
+}
+/* how links behave in mirror tab. */
+.mirrortab_back a:link , .mirrortab_back a:visited, .mirrortab_active_back a:link , .mirrortab_active_back a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+.mirrortab_back a:hover, .mirrortab_active_back a:hover
+{
+	color: cornflowerblue;
+	text-decoration: none;
+}
+/* ~~~~~~~~~ STYLE FOR THE MAIN MENU ~~~~~~~~~ */
+	 #tabs6 {
+		position: relative;
+		top: -10px;
+		left: -90px;
+		width: 90%;
+		font-size:93%;
+		margin: auto;
+		line-height:normal;
+		height: 66px;
+		}
+	 #tabs6 ul {
+	  margin:0;
+	  padding:10px 10px 0 50px;
+	  list-style:none;
+		}
+	 #tabs6 li {
+		display:inline;
+		margin:0;
+		padding:0;
+		}
+	 #tabs6 a {
+		float:left;
+		background:url(images/tableft6.gif) no-repeat left top;
+		margin:0;
+		padding:0 0 0 4px;
+		text-decoration:none;
+		}
+	 #tabs6 a span {
+		float:left;
+		display:block;
+		background:url(images/tabright6.gif) no-repeat right top;
+		padding:5px 15px 4px 6px;
+		color:#FFF;
+		}
+	 /* Commented Backslash Hack hides rule from IE5-Mac \*/
+	 #tabs6 a span {float:none;}
+	 /* End IE5-Mac hack */
+	 #tabs6 a:hover span {
+		color: cornflowerblue;
+		}
+	 #tabs6 a:hover {
+		background-position:0% -42px;
+		}
+	 #tabs6 a:hover span {
+		background-position:100% -42px;
+	 }
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #202020;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

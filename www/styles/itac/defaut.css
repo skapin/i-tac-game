@@ -1,0 +1,735 @@
+/******************************************************************************
+Importation des proprietes globales
+******************************************************************************/
+
+@import url("global.css");
+
+/* Inventaire */
+
+@import url("matos.css");
+
+/* Inventaire */
+
+@import url("caracs.css");
+
+/******************************************************************************
+Elements en haut de la page
+******************************************************************************/
+
+body{
+   background:#191919 url("img/bg.gif");
+}
+
+/* background de la frame principale */
+
+#main{
+   background:#232323 url("img/bgMain.gif");
+   border:solid 2px #2d2d2d;
+   border-top:0;
+   border-bottom:0;
+   width:980px;
+   overflow:hidden;
+   margin:0 auto;
+   padding:0 10px 10px 0;
+   min-height:100%;
+}
+
+/* Logo */
+h1{   
+   float:left;
+   width:220px;
+   height:60px;
+   line-height:60px;
+   margin:10px 10px 10px 65px;
+}
+
+h1 a img{
+   border:none;
+}
+
+/* Banniere de pub. */
+
+#pub
+{
+   float:left;     
+   width:468px;
+   height:60px;
+   margin: 10px 0 0 100px;
+}
+
+#presentation p{
+   margin-bottom:14px;
+}
+/******************************************************************************
+Menu principal a gauche
+******************************************************************************/
+
+#menu li a{
+   color:#fff;
+   font-size:14px;
+   font-weight:bold;
+   display:block;
+   height:25px;
+   line-height:25px;
+   width:130px;
+   margin:0 0 5px -10px;
+   padding-left:20px;
+}
+
+#menu li a:hover,#menu li a.active{
+   margin-left:0;
+}
+
+#menu li strong, #menu li li a{
+   background:#2d2d2d;
+   color:#ffffff;
+   opacity:0.7;
+   font-weight:bold;
+}
+
+/* Titres des sections du menu a gauche. */
+
+#menu li strong{
+   font-size:14px;
+   display:block;
+   height:25px;
+   line-height:25px;
+   width:130px;
+   padding-left:10px;
+   margin:0 0 5px 0;
+}
+
+/* Item des sous menus du menu a gauche. */
+
+#menu li li a{
+   font-size:12px;
+   opacity:0.3;
+   width:120px;
+   padding-left:20px;
+   margin-left:-10px;
+   height:22px;
+   line-height:22px;
+}
+
+#menu li li a:hover,#menu li li a.active{
+   color:#fff;
+   opacity:0.7;
+   margin-left:0;
+}
+
+
+#menu li li span{
+   border:0;
+   display:block;
+   height:22px;
+   overflow:hidden;
+}
+
+#menu li li form{
+   opacity:0.3;
+   color:#fff;
+   background:#2d2d2d url("img/selectArrow.gif") right no-repeat;
+   font-weight:bold;
+   margin-bottom:5px;
+   font-size:12px;
+   width:130px;
+   padding-left:0;
+   margin-left:0;
+   height:22px;
+   line-height:22px;
+   overflow:hidden;
+}
+
+#menu li li form:hover{
+   color:#fff;
+   opacity:0.7;
+}
+
+#menu li li form span{
+   padding-left:10px;
+}
+ul.dropDown{
+  width:128px;
+  background:#222;
+  opacity:1;
+  z-index:3;
+  color:#8c8c8c;
+  overflow:hidden;
+  display:none;
+}
+
+ul.dropDown.shown{
+  border:solid 1px #646464;
+  overflow:auto;
+  display:block;
+}
+
+ul.dropDown li{
+  font-size:12px;
+  font-weight:bold;
+  padding-left:10px;
+  width:118px;
+  overflow:hidden;
+}
+
+ul.dropDown li.selected{
+   color:#bebebe;
+   background:#303030;
+}
+
+ul.dropDown li.optgroup{
+   font-style:italic;
+   font-size:12px;
+   padding:0;
+}
+
+ul.dropDown li.current{
+   color:#8ae36b;
+}
+
+ul.dropDown li.optgroup{
+   font-style:italic;
+   font-size:12px;
+   color:#fff;
+   padding:0;
+}
+
+
+#menu{
+   width:160px;
+   float:left;
+   clear:left;
+   overflow:hidden;
+}
+
+
+/* Premiers items du menu a gauche */
+
+#linkJeu{
+   background:#8ae36b url("img/jeuBg.png") repeat-x;
+}
+
+#linkNews{
+   background:#f9987e url("img/newsBg.png") repeat-x;
+}
+
+#linkForum{
+   background:#e36b6b url("img/forumBg.png") repeat-x;
+}
+
+#linkAccount{
+   background:#7eb1f9 url("img/accountBg.png") repeat-x;
+}
+
+#linkRP{
+   background:#af7cb5 url("img/chroniquesBg.png") repeat-x;
+}
+/******************************************************************************
+Contenu de la page
+******************************************************************************/
+
+#content{
+   float:left;
+   width:820px;
+}
+
+/******************************************************************************
+News
+******************************************************************************/
+
+.newsList h3,#eventFrame h3,#textFrame h3,#ordresFrame h3{
+   color:#f9987e;
+}
+
+.newsList a,#eventFrame a,#ordresFrame a{
+   color:#646464;
+}
+
+.newsList a:hover,#eventFrame a:hover,#textFrame a:hover,#ordresFrame a:hover{
+   color:#f9987e;
+}
+
+.footer{
+   text-align:right;
+   font-size:12px;
+   font-weight:bold;
+   color:#bebebe;
+}
+
+/* Titre des news */
+
+.newsList h3,#eventFrame h3,#textFrame h3,#ordresFrame h3{
+   margin:10px 0;
+   padding-left:10px;
+}
+
+.clearer{
+   clear:both;
+}
+
+/******************************************************************************
+Page d'inscription.
+******************************************************************************/
+
+#inscription h2{
+   color:#8ae36b;
+   margin:0 0 10px 10px;
+}
+
+#inscription h3{
+   color:#8ae36b;
+   margin:5px auto;
+   padding:0;
+}
+
+#inscription p{
+   margin-bottom:10px;
+}
+
+#inscription label{
+   display:block;
+}
+
+#inscription select{
+   margin:5px auto;
+}
+
+#inscription label input, #inscription label select{
+   display:block;
+   margin:5px auto;
+   height:20px;
+}
+
+#inscription input:focus{
+   border-color:#8ae36b;
+}
+
+#inscription .compte{
+   float:left;
+   width:409px;
+   text-align:center;
+   border-right:solid 1px #555;
+}
+
+#inscription .persos{
+   float:left;
+   width:410px;
+   text-align:center;
+}
+
+#inscription .accept{
+   padding-top:20px;
+   margin-bottom:10px;
+}
+
+#inscription .accept input{
+   height:auto;
+}
+
+#inscription a:hover{
+   color:#8ae36b;
+}
+
+#inscription p{
+   margin:0;
+}
+
+#inscription .accept label *,#inscription .preins p *{
+   display:inline;
+}
+
+/******************************************************************************
+Listes
+******************************************************************************/
+
+.liste h2{
+   color:#8ae36b;
+}
+
+.liste table,.framed table{
+   width:818px;
+   border-collapse:collapse;
+   margin:10px 0;
+}
+
+.liste table, .liste th, .liste td, .liste tr,.framed table, .framed th, .framed td, .framed tr{
+   border:solid 1px #ccc;
+}
+
+.liste th,.liste a:hover,.framed th{
+   color:#8ae36b;
+}
+
+.liste dd{
+   float:left;
+}
+
+.liste dt{
+   float:left;
+   clear:left;
+   margin-right:5px;
+}
+
+.liste a{
+   text-decoration:none;
+   color:#646464;
+}
+
+.liste ul{
+   margin:5px 0;
+}
+
+.liste dd ul{
+   margin:0;
+}
+
+.liste_liens li{
+   display:inline;
+   margin-right:10px;
+}
+
+.liste form{
+   clear:both;
+}
+
+.liste dl{
+   margin-bottom:10px;
+}
+
+.liste dt.clearer{
+   float:none;
+   clear:both;
+}
+/******************************************************************************
+Login
+******************************************************************************/
+
+.account a,#menuHaut.account li a.active,.account h2{
+   color:#7eb1f9;
+}
+
+.account form{
+   margin:10px 0;
+}
+
+.account label, .account label{
+   display:block;
+}
+
+.account input:focus{
+   border-color:#7eb1f9;
+}
+.account input{
+   margin:5px 0;
+}
+/*
+Jeu
+*/
+#moicompFrame h2,#moipersoFrame h2{
+   color:#8ae36b;
+   margin:10px 0 10px 10px;
+}
+
+#listeComp td{
+   text-align:center;
+}
+
+/*
+Com-link
+*/
+#consoleFrame h2{
+   clear:both;
+   color:#8ae36b;
+   margin:10px 0 10px 10px;
+}
+
+#consoleFrame iframe{
+   float:left;
+   width:600px;
+   margin-right:20px;
+   height:700px;
+}
+
+#consoleFrame a{
+   color:#8ae36b;
+}
+
+/*
+RP
+*/
+
+#menuHaut.rp li a.active,.rp h2,.rp h3,.rp li strong{
+   color:#af7cb5;
+}
+
+.rp li strong{
+   display:block;
+   margin:10px 0;
+}
+
+.rp h3,.rp h4{
+   margin-left:20px;
+}
+
+.rp input:focus, .rp textarea:focus, .rp select:focus{
+   border-color:#af7cb5;
+}
+
+.rp option:active{
+   background:#af7cb5;
+}
+/*
+::selection{
+   background:#af7cb5;
+}
+::-moz-selection{
+   background:#af7cb5;
+}
+*/
+.rp h2,.rp h3, .rp h4,.rp input,.rp select{
+   margin-bottom:5px;
+}
+
+.rp textarea{
+   margin-bottom:5px;
+   height:300px;
+   width:700px;
+}
+
+.rp a:hover{
+   color:#af7cb5;
+}
+
+#menu .dropDown.shown{
+   background:#777;
+   border:solid 1px #2d2d2d;
+   width:128px;
+}
+
+#menu .dropDown li{
+   padding-left:10px;
+}
+
+#menu .dropDown .optgroup{
+   font-style:italic;
+   padding-left:0;
+}
+
+#menu .dropDown .selected{
+   background:#333;
+   color:#ddd;
+}
+
+/*
+Missions
+*/
+
+#listeMissions{
+   padding:0 5px;
+}
+
+#listeMissions li{
+   opacity:0.3;
+   float:left;
+   z-index:1;
+   margin-right:-10px;
+   padding-left:10px;
+   background:url("img/missionLeft.gif") left no-repeat;
+   font-weight:bold;
+}
+
+#listeMissions a{
+   padding-right:10px;
+   display:block;
+   background:url("img/missionRight.gif") right no-repeat;
+}
+
+
+#listeMissions li.active{
+   opacity:0.7;
+   z-index:2;
+}
+
+#listeMissions li.active a{
+   color:#8ae36b;
+}
+
+#listeMissions li a span{
+   background:#2d2d2d;
+   display:block;
+   height:20px;
+}
+
+.mission{
+   clear:both;
+   border:solid 1px #2d2d2d;
+   padding:5px;
+}
+
+.mission p{
+   margin:5px 0;
+}
+
+
+#presentation .info{
+   display:none;
+}
+
+#presentation h2{
+   margin:0 0 10px 10px;
+   color:#af7cb5;
+}
+
+.bandeau{
+   text-align:center;
+}
+
+.screen{
+   width:200px;
+   height:60px;
+   display:block;
+   margin:20px 35px;
+   float:left;
+   text-align:left;
+}
+
+.screen div{
+   display:none;
+   background:url("img/bgMain.gif");
+}
+
+.screen div h3{
+   text-align:center;
+   background:#000 url("img/titleCL.gif") repeat-x;
+   font-size:14px;
+   height:20px;
+   line-height:20px;
+   color:#bebebe;
+}
+
+.screen div img{
+   border:solid 2px #2d2d2d;
+   border-top:0;
+}
+
+.screen:hover div{
+   display:block;
+   position:fixed;
+   top:20px;
+   left:20%;
+}
+
+#screen01{
+   background:url("../../images/screens/screen01.gif") no-repeat;
+}
+#screen02{
+   background:url("../../images/screens/screen02.gif") no-repeat;
+}
+#screen03{
+   background:url("../../images/screens/screen03.gif") no-repeat;
+}
+#screen04{
+   background:url("../../images/screens/screen04.gif") no-repeat;
+   clear:left;
+}
+#screen05{
+   background:url("../../images/screens/screen05.gif") no-repeat;
+}
+#screen06{
+   background:url("../../images/screens/screen06.gif") no-repeat;
+}
+#screen01:hover{
+   background:url("../../images/screens/screen01Hover.gif") no-repeat;
+}
+#screen02:hover{
+   background:url("../../images/screens/screen02Hover.gif") no-repeat;
+}
+#screen03:hover{
+   background:url("../../images/screens/screen03Hover.gif") no-repeat;
+}
+#screen04:hover{
+   background:url("../../images/screens/screen04Hover.gif") no-repeat;
+}
+#screen05:hover{
+   background:url("../../images/screens/screen05Hover.gif") no-repeat;
+}
+#screen06:hover{
+   background:url("../../images/screens/screen06Hover.gif") no-repeat;
+}
+
+/*
+Chartes
+*/
+
+.chartes h2, .chartes h3{
+   margin:10px;
+   color:#e36b6b;
+}
+.chartes h2{
+   margin-top:0;
+}
+.chartes a:hover{
+   color:#e36b6b;
+}
+
+.chartes h4{
+   margin:5px 15px;
+}
+
+.chartes ol{
+   padding:0;
+   margin:0 0 0 30px;;
+}
+
+/*
+Listes d'equipement
+*/
+
+.bonus td dd, .bonus td dt{
+   margin:0;
+   font-size:12px;
+}
+
+.rp h2, .liste h2, .chartes h2,#inscription h2{
+   font-size:16px;
+   text-align:center;
+}
+
+.rp p, .liste p, .chartes p,.account p{
+   margin:10px 0;
+}
+
+#compagnies dl dt{
+   color:#8ae36b;
+   font-weight:bold;
+   margin:5px 0;
+}
+
+#compagnies dl dd{
+   margin:5px 0 5px 5px;
+}
+
+
+.liste ul.liste_liens{
+   margin:10px 0;
+}
+
+#tutos h3{
+   color:#8ae36b;
+}
+
+#tutos div{
+   margin:10px;
+}
+
+.vote li{
+   margin:8px 10px;
+}
+
+.vote li p{
+   display:inline;
+}
+
+/************************************************************************ EOF*/
+
+

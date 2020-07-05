@@ -1,0 +1,47 @@
+INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,34,0,80 ) DELETE FROM marche_commandes 
+					WHERE id=11UPDATE camps SET fonds=0 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=15UPDATE camps SET fonds=0 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=6UPDATE camps SET fonds=0 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=14UPDATE camps SET fonds=0 WHERE ID=2INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,34,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,12,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,12,0,80 ) DELETE FROM marche_commandes 
+					WHERE id=5UPDATE camps SET fonds=0 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=18UPDATE camps SET fonds=0 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=7UPDATE camps SET fonds=0 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=17UPDATE camps SET fonds=666 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=13UPDATE camps SET fonds=50 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=16UPDATE camps SET fonds=66 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=4UPDATE camps SET fonds=100 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=2UPDATE camps SET fonds=100 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=3UPDATE camps SET fonds=200 WHERE ID=2INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,3,0,80 ) DELETE FROM marche_commandes 
+					WHERE id=19UPDATE camps SET fonds=200 WHERE ID=2INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,35,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,35,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,35,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,35,0,80 ) DELETE FROM marche_commandes 
+					WHERE id=20UPDATE camps SET fonds=191 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=23UPDATE camps SET fonds=194 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=21UPDATE camps SET fonds=197 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=22UPDATE camps SET fonds=200 WHERE ID=2INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,5,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,4,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,8,0,80 ) INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,8,0,80 ) DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=26UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=UPDATE camps SET fonds=0 WHERE ID=DELETE FROM marche_commandes 
+					WHERE id=25UPDATE camps SET fonds=75 WHERE ID=2INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,9,0,80 ) DELETE FROM marche_commandes 
+					WHERE id=28UPDATE camps SET fonds=1000 WHERE ID=2DELETE FROM marche_commandes 
+					WHERE id=27UPDATE camps SET fonds=1050 WHERE ID=2INSERT INTO marche_commandes (`camp`,`carte`,`id_objet`,`etat`,`bought_by`)
+				VALUES (2,25,9,0,80 ) 

@@ -1,0 +1,5 @@
+ <div class="preins">
+  <p>Pour le moment, les inscriptions sont ferm&eacute;es. Toutefois, les membres de l'Association i-tac ont la possibilité de se pr&eacute;inscire dès maintenant. Pour cela, il leur suffit d'indiquer le code de pr&eacute;inscription qu'ils ont
+re&ccedil;u dans la case ci-dessous :</p>
+  <p><label for="code">Code : <input type="text" name="code" id="code" /></p>
+ </div>

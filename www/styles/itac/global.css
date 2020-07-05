@@ -1,0 +1,240 @@
+html,body{
+   font:14px "Arial", sans-serif;
+   color:#bebebe;
+   background:#191919 url("img/bg.gif");
+   height:100%;
+}
+
+h1{
+   font-size:14px;
+   text-align:center;
+}
+
+h2{
+   font-size:14px;
+   margin-left:10px;
+}
+
+h3{
+   font-size:14px;
+}
+
+select,input,textarea{
+   background:#282828;
+   color:#bebebe;
+   border:solid 1px #646464;
+}
+
+select:focus,input:focus,textarea:focus{
+   background:#373737;
+   color:#aaa;
+}
+
+select[disabled]{
+   opacity:0.5;
+}
+
+a{
+   text-decoration:none;
+   color:#646464;
+}
+
+dd,dt{
+   margin-top:5px;
+   float:left;
+}
+
+dt{
+   clear:left;
+}
+
+dd{
+   margin-left:4px;
+}
+/* Par defaut, on vire les marges et padding de tous les elements. */
+
+*{
+   margin:0;
+   padding:0;
+}
+
+/* Pas de style pour les listes. */
+
+ul{
+   list-style-type:none;
+}
+
+img
+{
+   border:0;
+}
+
+.boite_erreur
+{
+   border:solid 2px red ;
+   background-color: #86ca5f ;
+   position:absolute;
+   top:-230px;
+   left:10px;
+   height:150px;
+   width:80%;
+   overflow:auto;
+}
+
+
+
+.titleBar{
+   height:20px;
+   line-height:20px;
+   padding:0;
+   margin:0;
+   background:#000 url("img/titleCL.gif") repeat-x;
+   font-weight:bold;
+}
+
+.titleBar a{
+   height:20px;
+   width:20px;
+   text-indent:20px;
+   overflow:hidden;
+   display:block;
+   float:left;
+   color:#bebebe;
+}
+
+.titleBar a.close{
+   background:url("img/closeCL.gif") no-repeat;
+}
+
+.titleBar a.close:hover{
+   background:url("img/closeCLhover.gif") no-repeat;
+}
+
+.titleBar span{
+   height:20px;
+   float:left;
+   margin:0;
+   padding:0 0 0 5px;
+   color:#bebebe;
+}
+
+#events{
+   width:100%;
+   position:fixed;
+   bottom:0;
+}
+
+#events.closed{
+   display:none;
+}
+
+#events .titleBar{
+   width:400px;
+   margin:0 auto;
+}
+
+#eventsContent{
+   background:#2d2d2d url("img/bgMain.gif");
+   padding:5px;
+   width:390px;
+   margin:0 auto;
+}
+
+#matosFrame{
+   width:820px;
+}
+
+
+
+#fiche h3{
+   color:#8ae36b;
+   margin:5px 0 5px 20px;
+}
+
+#fiche .apparence{
+   width:400px;
+   float:left;
+   margin-right:20px;
+}
+
+#fiche .textes{
+   width:400px;
+   float:left;
+}
+
+#fiche h2{
+   clear:both;
+   text-align:left;
+   margin-left:10px;
+}
+
+#fiche h2.up{
+   padding-top:20px;
+}
+
+#fiche .menu li{
+   display:inline;
+   margin-right:10px;
+}
+
+/******************************************************************************
+Onglets
+******************************************************************************/
+
+#menuHaut{
+   height:25px;
+   width:100%;
+   margin-bottom:10px;
+   overflow:hidden;
+}
+
+#menuHaut li{
+   float:left;
+}
+
+#menuHaut li a{
+   font-size:14px;
+   font-weight:bold;
+   color:#ffffff;
+   text-align:center;
+   background:#2d2d2d;
+   display:block;
+   width:120px;
+   height:25px;
+   line-height:25px;
+   text-align:center;
+   opacity:0.3;
+}
+
+#menuHaut li a.active{
+   color:#faa892;
+   opacity:0.7;
+   width:200px;
+}
+
+#menuHaut li a.new{
+   opacity:0.5;
+}
+
+#menuHaut li a:hover{
+   opacity:0.7;
+}
+
+#menuHaut.perso li a.active{
+   color:#8ae36b;
+}
+
+/* Listes qui remplacent les select */
+ul.dropDown li{
+   display:none;
+   cursor:default;
+}
+
+ul.shown li{
+   display:block;
+   opacity:1;
+}
+
+.clearer{
+   clear:both;
+}

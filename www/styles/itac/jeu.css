@@ -1,0 +1,804 @@
+/******************************************************************************
+Importation des proprietes globales
+******************************************************************************/
+
+@import url(global.css);
+
+a:hover{
+   color:#8ae36b;
+}
+
+/******************************************************************************
+Menu
+******************************************************************************/
+
+#menu
+{
+   position:fixed;
+   top:0;
+   left:0;
+   z-index:2;
+   width:140px;
+   overflow:hidden;
+}
+
+#menu ul
+{
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   overflow:hidden;
+/*   background:#2d2d2d url("img/bgMain.gif");*/
+}
+
+#menu p{
+   margin:0;
+}
+
+#menu span{
+   display:block;
+   height:25px;
+   line-height:25px;
+   font-size:14px;
+   font-weight:bold;
+   padding-left:10px;
+   color:#fff;
+   opacity:0.7;
+   background:#2d2d2d;
+}
+
+#menu a, #menu span.select{
+   display:block;
+   height:22px;
+   line-height:22px;
+   width:150px;
+   margin:0 0 0 -10px;
+   padding-left:20px;
+   color:#fff;
+   font-size:12px;
+   font-weight:bold;
+   text-decoration:none;
+   opacity:0.3;
+   background:#2d2d2d;
+}
+
+#menu form select{
+   height:22px;
+   line-height:22px;
+   width:140px;
+   padding-left:5px;
+   color:#fff;
+   font-family:Arial;
+   font-size:12px;
+   font-weight:bold;
+   border:0;
+   background:#2d2d2d;
+   opacity:0.3;
+}
+
+#menu a:hover{
+   margin-left:0;
+   opacity:0.7;
+}
+
+#menu .titleBar a{
+   height:20px;
+   line-height:20px;
+   font-size:14px;
+   opacity:1;
+}
+
+#menu .titleBar a{
+   background:url("img/closeMenu.gif") 20px 0 no-repeat;
+   color:#bebebe;
+   margin-left:-10px;
+}
+
+#menu .titleBar a:hover{
+   background:url("img/closeMenuHover.gif") 20px 0 no-repeat;
+}
+
+#menu .titleBar a.closed{
+   background:url("img/openMenu.gif") 20px 0 no-repeat;
+}
+
+#menu .titleBar a:hover.closed{
+   background:url("img/openMenuHover.gif") 20px 0 no-repeat;
+}
+/*
+#menu .titleBar a:hover{
+   background:#000 url("img/titleCL.gif") repeat-x;
+}
+*/
+#menu span.select{
+   display:block;
+   height:22px;
+   line-height:22px;
+   width:130px;
+   margin:0;
+   padding-left:10px;
+   color:#fff;
+   font-size:12px;
+   font-weight:bold;
+   text-decoration:none;
+   cursor:default;
+   background:#2d2d2d url("img/selectArrow.gif") right no-repeat;
+}
+
+#menu span.select:hover{
+   opacity:0.7;
+}
+
+ul.dropDown{
+   width:138px;
+   background:#222;
+   opacity:1;
+   z-index:3;
+   color:#8c8c8c;
+  overflow:hidden;
+  display:none;
+}
+
+ul.dropDown.shown{
+   border:solid 1px #646464;
+  overflow:auto;
+  display:block;
+}
+
+ul.dropDown li{
+   font-size:12px;
+   font-weight:bold;
+   padding-left:10px;
+}
+
+ul.dropDown li.selected{
+   color:#bebebe;
+   background:#303030;
+}
+ul.dropDown li.current{
+   color:#8ae36b;
+}
+
+ul.dropDown li.optgroup{
+   font-style:italic;
+   font-size:12px;
+   padding:0;
+}
+
+
+
+
+/*************** Les bulles d'infos ************************/
+.infos
+{ 
+   display:none;
+}
+
+/****************** La bulle d'infos *****************************/
+
+#bulle
+{
+   min-width:200px;
+   max-width:250px;
+   height:auto;
+}
+
+#innerInfoBulle
+{
+   background:#2d2d2d url("img/bgMain.gif");
+   padding:5px;
+}
+
+#innerInfoBulle p
+{
+   margin:0 0 5px;
+   padding:0;
+}
+
+#bulle label{
+   display:block;
+}
+
+#bulle .sprints label{
+   display:inline;
+   margin-right:5px;
+}
+
+#innerInfoBulle h3{
+   color:#8ae36b;
+   margin:5px 0;
+}
+
+#innerInfoBulle h4{
+   margin:0 0 5px 5px;
+}
+
+#innerInfoBulle input{
+   color:#646464;
+   border-color:#646464;
+   font-size:10px;
+}
+
+#bulle select{
+   font-size:10px;
+}
+
+#bulle dt, #bulle dd{
+   margin-top:0;
+}
+
+#bulle dt.clearer{
+   float:none;
+}
+
+#shootFormDiv p{
+   margin:0;
+   position:relative;
+}
+
+#shootFormDiv p input{
+   position:absolute;
+   right:0;
+}
+
+/**************************** L'aire de jeu ********************************/
+
+#vue
+{
+   position:relative;
+   border-collapse:collapse;
+   border-spacing:0;
+   margin:0 auto;
+   table-layout:fixed;
+}
+
+#vue tr, #vue
+{
+   border:0;
+   text-align:center;
+}
+
+#vue td
+{
+   width:50px;
+   height:50px;
+   text-align:center;
+   border:1px solid #646464;
+   border-spacing:0;
+}
+
+.uQGMask{
+   background:url("img/utilisationQG.gif");
+}
+
+#vue td.vide
+{
+   background:none;
+   border:0;
+}
+
+#vue.lite td{
+   border:0;
+}
+
+#vue td p
+{
+   text-align:right;
+   font-size:0.6em;
+}
+
+/* Bords delimitant des differences de hauteur */
+#vue td.bordhautepais
+{
+   border-top:solid 1px #000;
+}
+
+#vue td.bordbasepais
+{
+   border-bottom:solid 1px #000;
+}
+
+#vue td.bordgaucheepais
+{
+   border-left:solid 1px #000;
+}
+
+#vue td.borddroitepais
+{
+   border-right:solid 1px #000;
+}
+
+/* Limites de la zone d'utilisation d'un QG */
+
+#vue td.qgud
+{
+   border-right: solid 1px #0f0;
+}
+#vue td.qgug{
+   border-left:solid 1px #0f0;
+}
+
+#vue td.qguh
+{
+   border-top:solid 1px#0f0;
+}
+#vue td.qgub
+{
+   border-bottom:solid 1px#0f0;
+}
+
+/* Limites de la zone de blocage */
+#vue td.qgbd
+{
+   border-right:solid 1px #ff7800;
+}
+#vue td.qgbg
+{
+   border-left:solid 1px #ff7800;
+}
+#vue td.qgbh
+{
+   border-top: solid 1px #ff7800;
+}
+#vue td.qgbb
+{
+   border-bottom: solid 1px #ff7800;
+}
+
+/* limites de la portee */
+
+#vue td.porteebas
+{
+   border-bottom:solid 1px #ff0000;
+}
+#vue td.porteedroite
+{
+   border-right:solid 1px #ff0000;
+}
+#vue td.porteehaut
+{
+   border-top:solid 1px #ff0000;
+}
+#vue td.porteegauche
+{
+   border-left:solid 1px #ff0000;
+}
+
+#vue td li{
+   display:inline;
+   margin:0 1px 1px 0;
+}
+
+#vue td li img{
+   z-index:30;
+}
+fieldset
+{
+   position:relative;
+   margin-left:10px;
+   margin-top:25px;
+   width:260px;
+}
+
+#perso_infos
+{
+   margin-left:5px;
+   margin-right:5px;
+   max-width:250px;
+   float:none;
+   clear:right;
+}
+
+#jeu #form_attaque
+{
+   position:relative;
+   float:left;
+   clear:right;
+   height: 165px;
+   width:150px;
+}
+
+#prix_conc
+{
+   position:relative;
+   left:1px;
+   width:50px;
+   text-align:center;
+   border:0;
+}
+
+#comlink
+{
+   position:fixed;
+   background:#2d2d2d;
+   top:0;
+   right:0;
+   width:0;
+   overflow:hidden;
+}
+
+
+#framelink
+{
+   width:100%;
+   height:100%;
+   border:none;
+}
+
+#comlink p
+{
+   width:100%;
+}
+
+#comlink p a{
+   height:20px;
+   width:20px;
+   text-indent:20px;
+   overflow:hidden;
+   display:block;
+   float:left;
+}
+
+#comlink p #closeCL{
+   background:url("img/closeCL.gif") no-repeat;
+}
+#comlink p #closeCL:hover{
+   background:url("img/closeCLhover.gif") no-repeat;
+}
+
+#comlink p #resizeCL{
+   background:url("img/resizeCL.gif") no-repeat;
+}
+
+#comlink p #resizeCL:hover{
+   background:url("img/resizeCLhover.gif") no-repeat;
+}
+
+#action{
+   display:none;
+}
+
+.deminage form{
+   display:inline;
+}
+
+#vue td input{
+   border:0;
+   background:none;
+   font-weight:bold;
+   font-size:large;
+   color:#333;
+   cursor:pointer;
+}
+
+#vue td input:hover{
+   color:#8ae36b;
+}
+
+#vue td input.infi:hover{
+   color:#e36b6b;
+}
+
+#vue td input.no:hover{
+   color:#333;
+   cursor:default;
+}
+
+#vue td a.qg{
+   font-weight:normal;
+   font-size:x-small;
+   width:48px;
+   display:block;
+   text-align:center;
+}
+
+#vue td.ca{
+   color:#00f;
+}
+#vue td.ce{
+   color:#f00;
+}
+/*
+Style des persos camous
+*/
+#vue td.camou1 *,#vue td.camou01 *{
+   opacity:0.25;
+}
+
+#vue td.camou2 *,#vue td.camou02 *{
+   opacity:0.4;
+}
+#vue td.camou3 *,#vue td.camou03 *{
+   opacity:0.55;
+}
+#vue td.camou4 *,#vue td.camou04 *{
+   opacity:0.7;
+}
+#vue td.camou5 *,#vue td.camou05 *{
+   opacity:0.85;
+}
+#vue td.camou1,#vue td.camou2,#vue td.camou3,#vue td.camou4,#vue td.camou5{
+   color:#555;
+}
+/*
+Style des camps
+*/
+
+#vue tr td.m{
+   color:#0f0;
+}
+#vue p.hauteur{
+   color:#555;
+}
+
+#vue td p.mine{
+   text-align:center;
+   font-size:0.8em;
+   color:#ff4455;
+   opacity:1;
+}
+
+#vue td p.matos{
+   text-align:center;
+   font-size:0.8em;
+   color:#5544ff;
+   opacity:1;
+}
+
+#vue td p.g{
+   opacity:1;
+   font-size:12px;
+   text-align:center;
+}
+#vue td p.g0{
+   opacity:1;
+   font-size:12px;
+   text-align:center;
+}
+
+#vue td p.g1{
+   opacity:1;
+   font-size:12px;
+   text-align:center;
+}
+
+#vue td p.g2{
+   opacity:1;
+   font-size:12px;
+   text-align:center;
+}
+
+#vue td p.g3{
+   opacity:1;
+   font-size:12px;
+   text-align:center;
+}
+
+
+
+td.pl{
+   background:#8ce66e url("img/plaine.gif");
+   color:#555;
+}
+td.cl{
+   background:#78d269 url("img/clairiere.gif");
+   color:#555;
+}
+td.fo{
+   background:#64be64 url("img/foret.gif");
+   color:#555;
+}
+td.mo{
+   background:#dcb48c url("img/montagne.gif");
+   color:#555;
+}
+td.de{
+   background:#fafa82 url("img/desert.gif");
+   color:#555;
+}
+td.ma{
+   background:#96966e url("img/marais.gif");
+   color:#555;
+}
+td.po{
+   background:#96969b url("img/route.gif");
+   color:#555;
+}
+td.pa{
+   background-color:#969696;
+   color:#555;
+}
+td.ea{
+   background:#82b4fa url("img/eau.gif");
+   color:#555;
+}
+td.mur{
+   background:#000000 url("img/mur.gif");
+   color:#555;
+}
+td.bo{
+   background-color:#9d6600;
+   color:#555;
+}
+td.ro{
+   background:#96969b url("img/route.gif");
+   color:#555;
+}
+td.ch{
+   background:#beaa78 url("img/chemin.gif");
+   color:#555;
+}
+td.gr{
+   background:#777 url("img/grotte.gif");
+}
+td.be{
+   background:#888 url("img/metal.gif");
+}
+td.la{
+   background:#8c0f0a url("img/lave.gif");
+   color:#555;
+}
+td.fc{
+   background:#4b1e0a url("img/cendres.gif");
+   color:#555;
+}
+td.calc01{
+   background:#737373 url("img/calc01.gif");
+}
+td.calc01b{
+   background:#737373 url("img/calc01b.gif");
+}
+td.calc02{
+   background:#737373 url("img/calc02.gif");
+}
+td.calc02b{
+   background:#737373 url("img/calc02b.gif");
+}
+td.calc03{
+   background:#737373 url("img/calc03.gif");
+}
+td.calc03b{
+   background:#737373 url("img/calc03b.gif");
+}
+td.ne{ 
+   background:#eee url("img/neige.gif");
+}
+td.por{ 
+   background:#f00 url("img/porte.gif");
+}
+
+/*
+Fleches de deplacement
+*/
+.no a,.bouge a,.infi a{
+   display:block;
+   margin:0 auto;
+   width:15px;
+   height:15px;
+   overflow:hidden;
+   text-indent:15px;
+}
+
+.no a{
+   cursor:default;
+}
+
+.NO{
+   background:url("img/no.gif") no-repeat;
+}
+
+.no .NO:hover{
+   background:url("img/noImpossible.gif") no-repeat;
+}
+
+.bouge .NO:hover{
+   background:url("img/noDeplacement.gif") no-repeat;
+}
+.infi .NO:hover{
+   background:url("img/noInfiltration.gif") no-repeat;
+}
+
+.O{
+   background:url("img/o.gif") no-repeat;
+}
+
+.no .O:hover{
+   background:url("img/oImpossible.gif") no-repeat;
+}
+
+.bouge .O:hover{
+   background:url("img/oDeplacement.gif") no-repeat;
+}
+.infi .O:hover{
+   background:url("img/oInfiltration.gif") no-repeat;
+}
+
+.SO{
+   background:url("img/so.gif") no-repeat;
+}
+
+.no .SO:hover{
+   background:url("img/soImpossible.gif") no-repeat;
+}
+
+.bouge .SO:hover{
+   background:url("img/soDeplacement.gif") no-repeat;
+}
+.infi .SO:hover{
+   background:url("img/soInfiltration.gif") no-repeat;
+}
+
+.N{
+   background:url("img/n.gif") no-repeat;
+}
+
+.no .N:hover{
+   background:url("img/nImpossible.gif") no-repeat;
+}
+
+.bouge .N:hover{
+   background:url("img/nDeplacement.gif") no-repeat;
+}
+.infi .N:hover{
+   background:url("img/nInfiltration.gif") no-repeat;
+}
+
+.S{
+   background:url("img/s.gif") no-repeat;
+}
+
+.no .S:hover{
+   background:url("img/sImpossible.gif") no-repeat;
+}
+
+.bouge .S:hover{
+   background:url("img/sDeplacement.gif") no-repeat;
+}
+.infi .S:hover{
+   background:url("img/sInfiltration.gif") no-repeat;
+}
+
+.NE{
+   background:url("img/ne.gif") no-repeat;
+}
+
+.no .NE:hover{
+   background:url("img/neImpossible.gif") no-repeat;
+}
+
+.bouge .NE:hover{
+   background:url("img/neDeplacement.gif") no-repeat;
+}
+.infi .NE:hover{
+   background:url("img/neInfiltration.gif") no-repeat;
+}
+
+.E{
+   background:url("img/e.gif") no-repeat;
+}
+
+.no .E:hover{
+   background:url("img/eImpossible.gif") no-repeat;
+}
+
+.bouge .E:hover{
+   background:url("img/eDeplacement.gif") no-repeat;
+}
+.infi .E:hover{
+   background:url("img/eInfiltration.gif") no-repeat;
+}
+
+.SE{
+   background:url("img/se.gif") no-repeat;
+}
+
+.no .SE:hover{
+   background:url("img/seImpossible.gif") no-repeat;
+}
+
+.bouge .SE:hover{
+   background:url("img/seDeplacement.gif") no-repeat;
+}
+.infi .SE:hover{
+   background:url("img/seInfiltration.gif") no-repeat;
+}

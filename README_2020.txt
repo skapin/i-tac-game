@@ -1,0 +1,1 @@
+ALTER USER 'itac2020'@'%' IDENTIFIED WITH mysql_native_password BY 'jfglkrg5gh4qrh5qhr1qh1';

@@ -1,0 +1,9 @@
+
+--Cette ligne, et les suivantes ci-dessous, seront ignorées--
+
+M    sources/globals.php
+M    sources/fonctions.php
+M    www/carte.php
+M    admin/admin_objets.php
+M    gene/gene_ngene.php
+A    gene/gene_marche.php

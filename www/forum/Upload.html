@@ -1,0 +1,106 @@
+<center>
+<!--
+////////////////////////////////////////////////////////
+///// Quick Upload 2.0 by Elmacik for SMF //////////////
+//////////////////http://www.elmacik.com////////////////
+////////////////////////////////////////////////////////
+// HERE YOU ADD MORE CASES FOR MORE HOSTS LIKE:		//
+////////////////////////////////////////////////////////
+//									//
+//    case '11':							//
+//      host_site.action="http://NEWHOST.COM/";		//
+//      file.name="FILE_ATTRIBUTE_NAME_OF_THE_HOST";	//
+//	  hidden.name="IF_THERE_IS_A_HIDDEN_INPUT"	//
+//      break;							//
+//									//
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+ -->
+<script type="text/javascript">
+<!--
+function switchForm(opt)
+{
+  var host_site = document.getElementById('upform');
+  var file = document.getElementById('file');
+  var button = document.getElementById('upload');
+  var hidden = document.getElementById('hidden');
+  button.disabled='';
+  switch (opt.value)
+  {
+    case '1':
+      host_site.action="http://ul1.rapidshare.de/cgi-bin/upload.cgi";
+      file.name="filecontent";
+      break;
+    case '2':
+      host_site.action="http://s33.yousendit.com/default.uplx";
+      file.name="LoadFileName";
+      hidden.name="__eventtarget"
+      break;
+    case '3':
+      host_site.action="http://premium.upload2.net/upload.php";
+      file.name="userfile";
+      break;
+    case '4':
+      host_site.action="http://momoshare.com/doupload.php";
+      file.name="userfile";
+      break;
+    case '5':
+      host_site.action="http://zupload.com/upload.php";
+      file.name="userfile[]";
+      break;
+    case '6':
+      host_site.action="http://s5.ultrashare.net/bin/load/";
+      file.name="share_file";
+      break;
+    case '7':
+      host_site.action="http://www.rapidupload.com/upload.php";
+      file.name="userfile[]";
+      break;
+    case '8':
+      host_site.action="http://www.ihud.com/index.php?upload=doupload";
+      file.name="file";
+      break;
+    case '9':
+      host_site.action="http://www.sendmefile.com/index.php?action=upload&module=index";
+      file.name="userfile";
+      break;
+    case '10':
+      host_site.action="http://www.mooload.com/index.php";
+      file.name="filetoupload";
+      break;
+    default:
+      host_site.action='';
+      file.name='';
+      button.disabled='disabled';
+      break;
+  }
+}
+// -->
+</script>
+<!--
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+// HERE YOU CAN REMOVE THE HOSTS OR ADD NEW ONES' FORMS LIKE:				 //
+///////////////////////////////////////////////////////////////////////////////////////
+// document.write('<option value="11" label="Site 11">NEW HOST NAME HERE</option>'); //
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+-->
+<script type="text/javascript">
+document.write('<form target="_blank" enctype="multipart/form-data" action="" method="post" id="upform"><fieldset style="background-image:url(./Themes/default/images/header2.png)"><legend align="center" style="background-image:url(./Themes/default/images/header1.png)">Attach a File</legend>');
+document.write('<label for="file">Select File:<input type="file" name="" id="file" /><input type="hidden" name="" value="" id="hidden" /></label>');
+document.write('<label for="site">Select Host:');
+document.write('<select name="site" id="site" onchange="switchForm(this)">');
+document.write('<option label=""></option>');
+document.write('<option value="1" label="Site 1">RapidShare.de</option>');
+document.write('<option value="2" label="Site 2">YouSendIt.com</option>');
+document.write('<option value="3" label="Site 3">Upload2.net</option>');
+document.write('<option value="4" label="Site 4">Momoshare.com</option>');
+document.write('<option value="5" label="Site 5">zUpload.com</option>');
+document.write('<option value="6" label="Site 6">UltraShare.net</option>');
+document.write('<option value="7" label="Site 7">RapidUpload.com</option>');
+document.write('<option value="8" label="Site 8">iHud.com</option>');
+document.write('<option value="9" label="Site 9">SendMeFile.com</option>');
+document.write('<option value="10" label="Site 10">MooLoad.com</option>');
+document.write('</select><input type="submit" value="Upload" name="upload" id="upload" disabled="disabled"></fieldset></form>');
+</script></center>

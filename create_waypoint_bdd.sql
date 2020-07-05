@@ -1,0 +1,14 @@
+ CREATE TABLE `itac01`.`waypoint` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+`camps` TINYINT( 3 ) NOT NULL ,
+`carte` MEDIUMINT( 5 ) NOT NULL ,
+`x` TINYINT( 4 ) NOT NULL ,
+`y` TINYINT( 4 ) NOT NULL ,
+`label` VARCHAR( 3 ) NOT NULL ,
+`color_R` MEDIUMINT( 4 ) NOT NULL ,
+`color_G` MEDIUMINT( 4 ) NOT NULL ,
+`color_B` MEDIUMINT( 4 ) NOT NULL ,
+`grade` MEDIUMINT( 4 ) NOT NULL ,
+`compa` MEDIUMINT( 4 ) NOT NULL ,
+PRIMARY KEY ( `id` )
+) ENGINE = MYISAM  

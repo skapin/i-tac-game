@@ -1,0 +1,54 @@
+/******************************************************************************
+Page de jeu hors mission
+******************************************************************************/
+#moipersoFrame h2, #moiimplantsFrame h2{
+   clear:both;
+   color:#8ae36b;
+   margin:10px 0 10px 10px;
+}
+
+#moipersoFrame h3, #moiimplantsFrame h3{
+   color:#8ae36b;
+   margin:5px 0;
+   font-size:12px;
+}
+
+#moipersoFrame td, #moiimplantsFrame td{
+   text-align:center;
+}
+
+
+#persoInfos{
+   width:300px;
+   float:left;
+   margin:0px 20px 10px 0;
+}
+
+#content .jouer li a.active{
+   color:#8ae36b;
+}
+
+#moipersoFrame form{
+   float:left;
+   width:500px;
+}
+
+#moipersoFrame textarea{
+   width:400px;
+   height:200px;
+   margin-bottom:10px;
+}
+
+#new_message_ok{
+   margin-top:5px;
+}
+
+#moipersoFrame textarea:focus{
+   border-color:#8ae36b;
+}
+
+
+#change_perso, #new_perso{
+   margin-bottom:10px;
+}
+

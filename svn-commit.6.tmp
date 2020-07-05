@@ -1,0 +1,14 @@
+Ajout du marché, partie client
+	*passer commande,s voir command,e voir catalogues pour les généraux
+	*modification base de données
+--Cette ligne, et les suivantes ci-dessous, seront ignorées--
+
+M    sources/globals.php
+M    sources/fonctions.php
+M    www/carte.php
+M    admin/admin_objets.php
+A    alter_camps.sql
+A    alter_objets.php
+A    create_marche_commandes.sql
+M    gene/gene_ngene.php
+A    gene/gene_marche.php

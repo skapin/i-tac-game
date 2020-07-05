@@ -1,0 +1,152 @@
+body{
+   background:#232323 url("img/bgMain.gif");
+}
+
+#matosFrame div div.active{
+   border:solid 1px #8ae36b;
+}
+
+#poidsTotal
+{
+	text-align:center;
+}
+
+#armeP,#armure,#armeS,#gad1,#gad2,#gad3{
+   border:solid 1px #ccc;
+   width:198px;
+}
+
+#armeP .detail,#armure .detail,#armeS .detail,#gad1 .detail,#gad2 .detail,#gad3 .detail{
+   display:none;
+}
+
+#listeMatos{
+   float:left;
+   height:460px;
+   text-align:center;
+   width:198px;
+   margin-right:5px;
+}
+
+#listeMatos h2{
+   color:#8ae36b;
+   margin:0;
+   text-align:center;
+}
+
+.weapon{
+   float:left;
+   height:330px;
+   width:200px;
+   margin-left:5px;
+}
+
+#middle{
+   float:left;
+   height:300px;
+   width:200px;
+   margin-left:5px;
+}
+
+.gadget{
+   float:left;
+   height:180px;
+   width:200px;
+   margin:5px 0 0 5px;
+}
+
+
+.weapon h2,#middle h2, .gadget h2{
+   height:20px;
+   line-height:20px;
+   margin-top:5px;
+   margin-left:0;
+   width:200px;
+   clear:none;
+   font-size:12px;
+   font-weight:bold;
+   text-align:center;
+   background:#2d2d2d;
+   opacity:0.3;
+}
+
+.weapon:hover h2,#middle:hover h2, .gadget:hover h2{
+   color:#bebebe;
+   height:25px;
+   margin-top:0;
+   opacity:0.7;
+}
+
+.weapon.active h2,#middle.active h2, .gadget.active h2{
+   color:#8ae36b;
+   height:25px;
+   margin-top:0;
+   opacity:0.7;
+}
+
+
+#armeP{
+   height:300px;
+}
+
+#armure{
+   height:270px;
+   float:none;
+}
+
+#armeS{
+   height:300px;
+}
+
+#gad1,#gad2,#gad3{
+   height:150px;
+}
+
+.displayMatos,.infos{
+   display:none;
+}
+
+#listeMatos select{
+   width:190px;
+   margin:10px auto 0;
+}
+
+#formEquip p{
+   width:200px;
+   height:25px;
+   text-align:center;
+   margin-top:5px;
+}
+
+.infos{
+   width:250px;
+   background:#000;
+   color:#aaa;
+   opacity:0.8;
+   padding-bottom:10px;
+}
+
+.infos h3{
+   text-align:center;
+   margin:0 0 5px;
+}
+
+.infos p.titleBar{
+   color:#8ae36b;
+   padding-left:10px;
+   margin-bottom:10px;
+}
+
+.infos dl{
+   padding:0 10px;
+}
+.infos hr, #armeS hr, #armeP hr{
+   clear:both;
+}
+
+#poidsTransportable
+{
+	position:relative;
+	top:-15px;
+	text-align:center;
+}
